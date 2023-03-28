@@ -12,7 +12,7 @@ jobs:
         run: |
           #  ML workflow goes here
           pip install -r requirements.txt
-          python model.py
+          python train_pipeline.py
           
           echo "## Model Metrics" > report.md
           cat metrics.txt >> report.md
